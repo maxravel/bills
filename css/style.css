@@ -1,0 +1,33 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    background-color: aqua;
+    height:100vh;
+}
+
+.calc{
+    padding-top:30px;
+    padding-left:20px;
+}
+
+#wodaC, #wodaZ, #gaz, #prad{
+    padding:20px;
+    font-size:22px;
+    margin:10px;
+}
+
+#ostatni, #obecny{
+    height:30px;
+}
+
+input[type='number'] { 
+    font-size: 24px; 
+}
+
+label{
+    padding:10px;
+    font-size:22px;
+}
