@@ -1,2 +1,2 @@
 working all 4 modes;  
-to do: adding total price;  
+to do: adding total price in progress...   

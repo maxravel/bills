@@ -7,7 +7,9 @@
     const gaz = document.querySelector("#gaz");
     const prad = document.querySelector("#prad");
     const oplata = document.querySelector("#oplata");
-    // const calosc = document.querySelector("#calosc");
+    const calosc = document.querySelector("#calosc");
+    const dodaj = document.querySelector("#dodaj");
+
     wodaC.addEventListener("click",
     function wc(e){
         let ost = parseFloat(ostatni.value);
@@ -39,12 +41,32 @@
     }, false);
 
     prad.addEventListener("click",
-    function gaz(e){
+    function pr(e){
         let ost = parseFloat(ostatni.value);
         let obe = parseFloat(obecny.value);
         let wynik = (obe-ost)*0.58*(1+0.001*2.51)+10.7133;
         oplata.value = wynik.toFixed(2);
         // calosc.value=+oplata.value;
+        e.preventDefault();
+    }, false);
+
+    dodaj.addEventListener("click",
+    function total(e){
+        // let ost = parseFloat(ostatni.value);
+        // let obe = parseFloat(obecny.value);
+        // let wynik = (obe-ost)*0.58*(1+0.001*2.51)+10.7133;
+        // oplata.value = wynik.toFixed(2);
+        //let a = 0;
+        //let b = parseFloat(oplata.value);
+        //a+=b;
+        // calosc.value=a;
+        //parseFloat(calosc.value)+=parseFloat(oplata.value);
+        // let oplata = parseFloat(oplata.value);
+        // let wynik =parseFloat(calosc.value);
+        // wynik+=oplata;
+        //calosc.value+=parseFloat(oplata.value);
+        calosc.value+=oplata.value;
+        //console.log(a);
         e.preventDefault();
     }, false);
 
