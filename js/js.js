@@ -65,10 +65,13 @@
         // let wynik =parseFloat(calosc.value);
         // wynik+=oplata;
         //calosc.value+=parseFloat(oplata.value);
-        calosc.value+=oplata.value;
+        let c= Number(calosc.value);
+        let o= Number(oplata.value);
+        c+=o;
+        calosc.value=c;
+        // calosc.value+=oplata.value;
         //console.log(a);
         e.preventDefault();
     }, false);
-
 
  })();
