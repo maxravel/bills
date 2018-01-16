@@ -35,3 +35,16 @@ label{
     padding:10px;
     font-size:22px;
 }
+
+#cal{
+    font-weight:bold; 
+}
+
+#calosc{
+    background:yellow;
+}
+
+#rachunki{
+    font-size:24px;
+
+}

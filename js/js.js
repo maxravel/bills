@@ -16,6 +16,7 @@
         let obe = parseFloat(obecny.value);
         let wynik = (obe-ost)*32.5;
         oplata.value = wynik.toFixed(2);
+        document.getElementById("rachunki").innerHTML = "Woda ciepła:  " + "("+obe+"-"+ost+")*"+32.5+"="+wynik; 
         // calosc.value=+oplata.value;
         e.preventDefault();
     }, false);
@@ -26,6 +27,7 @@
         let obe = parseFloat(obecny.value);
         let wynik = (obe-ost)*8.91;
         oplata.value = wynik.toFixed(2);
+        document.getElementById("rachunki").innerHTML = "Woda zimna:  " + "("+obe+"-"+ost+")*"+8.91+"="+wynik;
         // calosc.value=+oplata.value;
         e.preventDefault();
     }, false);
@@ -36,6 +38,7 @@
         let obe = parseFloat(obecny.value);
         let wynik = (obe-ost)*10.972*18.141/100+6.84;
         oplata.value = wynik.toFixed(2);
+        document.getElementById("rachunki").innerHTML = "Woda zimna:  " + "("+obe+"-"+ost+")*"+10.972+"*"+18.141+"/"+100+"+"+6.84+"="+wynik;
         // calosc.value=+oplata.value;
         e.preventDefault();
     }, false);
@@ -46,6 +49,7 @@
         let obe = parseFloat(obecny.value);
         let wynik = (obe-ost)*0.58*(1+0.001*2.51)+10.7133;
         oplata.value = wynik.toFixed(2);
+        document.getElementById("rachunki").innerHTML = "Woda zimna:  " + "("+obe+"-"+ost+")*"+0.58+"*("+1+"+"+0.001+"*"+2.51+")"+"+"+10.7133+"="+wynik ;
         // calosc.value=+oplata.value;
         e.preventDefault();
     }, false);
