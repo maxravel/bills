@@ -37,7 +37,7 @@
         let obe = parseFloat(obecny.value);
         let wynik = (obe-ost)*10.972*18.141/100+6.84;
         oplata.value = wynik.toFixed(2);
-        document.getElementById("rachunki").innerHTML = "Woda zimna:  " + "("+obe+"-"+ost+")*"+10.972+"*"+18.141+"/"+100+"+"+6.84+"="+wynik.toFixed(2);
+        document.getElementById("rachunki").innerHTML = "Gaz:  " + "("+obe+"-"+ost+")*"+10.972+"*"+18.141+"/"+100+"+"+6.84+"="+wynik.toFixed(2);
         e.preventDefault();
     }, false);
 
@@ -45,9 +45,9 @@
     function pr(e){
         let ost = parseFloat(ostatni.value);
         let obe = parseFloat(obecny.value);
-        let wynik = (obe-ost)*0.58*(1+0.001*2.51)+10.7133;
+        let wynik = (obe-ost)*(0.58+0.001*2.51)+10.7133;
         oplata.value = wynik.toFixed(2);
-        document.getElementById("rachunki").innerHTML = "Woda zimna:  " + "("+obe+"-"+ost+")*"+0.58+"*("+1+"+"+0.001+"*"+2.51+")"+"+"+10.7133+"="+wynik.toFixed(2);
+        document.getElementById("rachunki").innerHTML = "Prąd:  " + "("+obe+"-"+ost+")*"+"(0.58+"+0.001+"*"+2.51+")"+"+"+10.7133+"="+wynik.toFixed(2);
         e.preventDefault();
     }, false);
 
