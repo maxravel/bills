@@ -10,17 +10,25 @@
 <body>
     <div class="container">
         <div class="calc">
+            <p class="top">Wprowadź ostatni pomiar oraz obecny pomiar, kliknij parametr, ktory chcesz policzyć, następnie kliknij dodaj aby dodać do sumy całkowitej. Postępuj podobnie z kolejnymi parametrami.</p>
             <label for="ostatni">Ostatni pomiar: [m^3]</label><input type="number" placeholder="ostatni pomiar" id="ostatni"><br><br><br>
             <label for="obecny">Obecny pomiar: [m^3]</label><input type="number" placeholder="obecny pomiar" id="obecny"><br><br><br>
-            <button type="submit" id="wodaC">Woda Ciepła</button>
-            <button type="submit" id="wodaZ">Woda Zimna</button>
+            <button type="submit" id="wodaCK">Woda Ciepła Kuchnia</button>
+            <button type="submit" id="wodaZK">Woda Zimna Kuchnia</button>
+            <button type="submit" id="wodaCL">Woda Ciepła Łazienka</button>
+            <button type="submit" id="wodaZL">Woda Zimna Łazienka</button>
             <button type="submit" id="gaz">Gaz</button>
             <button type="submit" id="prad">Prąd</button>
             <button type="submit" id="dodaj">Dodaj</button> 
             <br><br><br>
             <label for="oplata">Opłata: [PLN]</label><input type="number" placeholder="opłata" id="oplata"><br><br>
             <label for="calosc" id="cal">Całość: [PLN]</label><input type="number" placeholder="Całość" id="calosc"><br><br>
-            <p id="rachunki"></p>
+            <p id="rachunkiwck"></p>
+            <p id="rachunkiwzk"></p>
+            <p id="rachunkiwcl"></p>
+            <p id="rachunkiwzl"></p>
+            <p id="rachunkigaz"></p>
+            <p id="rachunkiprad"></p>
         </div>
     </div>
     <script src="js/js.js"></script>

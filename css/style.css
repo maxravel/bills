@@ -13,10 +13,11 @@
     padding-left:20px;
 }
 
-#wodaC, #wodaZ, #gaz, #prad, #dodaj{
-    padding:20px;
-    font-size:22px;
-    margin:10px;
+#wodaCK, #wodaZK, #wodaCL, #wodaZL, #gaz, #prad, #dodaj{
+    padding:13px;
+    font-size:14px;
+    margin:3px;
+    font-weight: bold;
 }
 
 #ostatni, #obecny, #calosc{
@@ -44,6 +45,14 @@ label{
     background:yellow;
 }
 
-#rachunki{
+p{
     font-size:24px;
+}
+
+.top{
+    padding:5px;
+    margin-bottom:40px;
+    margin-left:100px;
+    margin-right:100px;
+    border: solid black 1px;
 }
